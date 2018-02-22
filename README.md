@@ -135,7 +135,8 @@ InstalledDir: /Applications/Xcode-8.3.3.app/Contents/Developer/Toolchains/XcodeD
      ```
      bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
      ```
- * Install tensorflow wheel 
+ * Install tensorflow wheel (make sure to uninstall tensorflow and tensorflow-gpu before installing below)
      ```
-     sudo pip install /tmp/tensorflow_pkg/tensorflow-1.6.0rc1-cp36-cp36m-macosx_10_12_x86_64.whl (File name depends on tensorflow version and python version)
+     pip install --upgrade dask
+     pip install /tmp/tensorflow_pkg/tensorflow-1.6.0rc1-cp36-cp36m-macosx_10_12_x86_64.whl (File name depends on tensorflow version and python version)
      ```
